@@ -380,6 +380,10 @@ h3.personal {
   width: 100%;
   border: 1px solid #d8d6d6;
 }
+.project-box a {
+  text-decoration: none;
+  color: #787474;
+}
 /* remove border top below image, need to declare after .border-detail */
 .project-img {
   border-bottom: none;
@@ -398,7 +402,8 @@ h3.personal {
 .project-detail-last {
   border-bottom: none;
 }
-/* ===== Project Area =====*/
+
+/* ===== Footer Area =====*/
 #footer {
   text-align: center;
   background-color: #d8d6d6;
