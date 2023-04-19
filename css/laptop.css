@@ -1,0 +1,436 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+COLOR
+
+#f7f7f7; -- banner text color
+#787474; -- color text page
+#228be6; -- personal icon
+#d8d6d6; -- border nav
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.padding-left {
+  padding-left: 8rem !important;
+}
+.padding-right {
+  padding-right: 8rem !important;
+}
+/* .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+} */
+/* .space-between {
+  justify-content: space-between;
+} */
+.border-left {
+  border-left: 0.1rem solid #d8d6d6;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #787474;
+  font-size: 1.6rem;
+  overflow-x: hidden; /* no scroll */
+}
+/* ===== Header ===== */
+header {
+  margin-bottom: 30px;
+}
+/* header have full width */
+header .container-fluid {
+  padding: 0;
+}
+
+/* ==== Banner here ==== */
+#banner {
+  width: 100%;
+  height: 50rem;
+  text-align: center;
+  /* background dark a little bit */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #f7f7f7;
+}
+#banner h1 {
+  font-weight: 300;
+  margin-bottom: 1.6rem;
+  font-size: 4.4rem;
+}
+
+.bg-grey {
+  width: 100%;
+  background-color: rgba(217, 213, 213, 0.3);
+}
+/* ==== Menu here ==== */
+section#nav-bar > .container {
+  /* ==don't use because this keep size on mobile== */
+  /* width: 1170px;
+  margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+#nav-bar a:link,
+#nav-bar a:visited {
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  color: #787474;
+  /* Use flex in each a to center text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 36px;
+  padding-right: 36px;
+  border-right: 1px solid #d8d6d6;
+  text-transform: uppercase;
+}
+
+.nav-none-border-right {
+  border-right: none !important;
+}
+.nav-bar-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.profile-center {
+  transform: scale(3, 3);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-image: url("../images/default-avatar.webp");
+  background-size: cover;
+  border: 0.3rem solid #f7f7f7;
+}
+
+.profile-center h3 {
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #787474;
+}
+.profile-center p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #787474;
+}
+
+/* ==== About here ==== */
+#about > .container-fluid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* padding: 0; */
+  margin-bottom: 20px;
+  width: 100%;
+}
+#target,
+#personal-info {
+  text-align: left;
+  padding: 80px 48px;
+  line-height: 1.6;
+}
+#target {
+  background-color: #dcdcdc;
+}
+#target h1 {
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+#personal-info {
+  margin: 0;
+  background-color: #d3d3d3;
+}
+#personal-info h1 {
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+#personal-info ul {
+  padding: 0;
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+.personal-info-icon {
+  display: flex;
+  color: #228be6;
+}
+/* ===== Job information =====*/
+#job-info {
+  margin-bottom: 30px;
+}
+#job-info.container {
+  /* display: flex; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* justify-content: space-between; */
+  /* gap: 24px; */
+}
+.info-box {
+  border: 1px solid #d8d6d6;
+  padding: 30px;
+  height: 100%;
+}
+.info-box-header {
+  display: flex;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.info-box-header i {
+  margin-left: auto;
+  font-size: 36px;
+  padding-bottom: 5px;
+}
+.info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.info-box li {
+  padding: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+.info-box li::before {
+  display: inline-block;
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #228be6;
+  font-size: 28px;
+  padding: 0;
+  margin-top: -0.3em;
+}
+.info-box-content {
+  line-height: 1.6;
+}
+.info-box h1 {
+  font-weight: 300;
+}
+.time {
+  padding-bottom: 5px;
+}
+.background-now {
+  background-color: #228be6;
+  color: #f7f7f7;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.favourite {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.favourite-icon {
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.favourite i {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #228be6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #228be6;
+}
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  font-size: 12 px;
+}
+.level-bar {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  gap: 5px;
+  justify-content: start;
+  padding: 16px 0;
+}
+span.grey-color {
+  display: block;
+  border: 2px solid #787474;
+}
+span.blue-color {
+  border: 2px solid #228be6;
+  border-radius: 2px;
+}
+/* ===== Certification Area =====*/
+
+#certificate {
+  margin-bottom: 30px;
+}
+#certificate > .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#certificate h1 {
+  padding: 20px 0;
+}
+.certificate-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* gap of rows */
+  row-gap: 24px;
+}
+.gom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+.gom:nth-child(even) .certificate-box {
+  border-left: 1px solid orange;
+  padding-left: 10px;
+}
+.certificate-box {
+  display: flex;
+  /* gap: 24px; */
+}
+.topspace {
+  border-top: 1px solid orange;
+}
+
+/* for image in a box => good ratio */
+.img-box {
+  width: 150px;
+  padding-bottom: 25px;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+}
+.certificate-box h2 {
+  text-transform: uppercase;
+}
+/* Top Boxs not have border top */
+.top-box {
+  border-top: none;
+}
+
+.border-left-cert {
+  border-left: 1px solid orange;
+  padding-left: 15px;
+}
+.padding-top {
+  padding-top: 16px;
+}
+
+/* ===== Project Area =====*/
+#project {
+  margin-bottom: 30px;
+}
+h1.section-title {
+  padding: 20px 0;
+}
+.container {
+  height: auto;
+}
+/* .project-area {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 24px;
+} */
+
+h3.personal {
+  padding: 16px 24px;
+  text-transform: uppercase;
+}
+.year {
+  display: flex;
+  padding: 12px 24px;
+  gap: 12px;
+  align-items: center;
+}
+.project-box {
+  border: 1px solid #d8d6d6;
+  height: 100%;
+  font-size: 14px;
+}
+.project-detail {
+  border-bottom: 1px solid #d8d6d6;
+}
+.project-detail img {
+  width: 100%;
+  border: 1px solid #d8d6d6;
+}
+/* remove border top below image, need to declare after .border-detail */
+.project-img {
+  border-bottom: none;
+}
+.project-desc {
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+  padding: 12px 8px;
+}
+.project-year-color {
+  background-color: #228be6;
+  border-radius: 15px;
+  padding: 7px 9px;
+  color: #f7f7f7;
+}
+.project-detail-last {
+  border-bottom: none;
+}
+/* ===== Project Area =====*/
+#footer {
+  text-align: center;
+  background-color: #d8d6d6;
+  padding: 40px;
+}
+#footer.section > .container {
+  display: flex;
+  justify-content: center;
+}
+#footer ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer li {
+  display: flex;
+  align-items: center;
+}
+.icons {
+  font-size: 32px;
+  padding: 5px 24px;
+  color: #228be6;
+}
+.icon-name {
+  font-size: 12px;
+  color: #787474;
+}
+
+/* class personal and h3 break the line */
+@media only screen and (max-width: 1199px) {
+  h3.personal {
+    height: 70px; /* Keep same height when text break line*/
+  }
+}
