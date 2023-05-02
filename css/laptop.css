@@ -124,7 +124,7 @@ section#nav-bar > .container {
   background-size: cover;
   border: 0.3rem solid #f7f7f7;
 }
-
+/* Profile text in basic layout */
 .profile-center h3 {
   text-transform: capitalize;
   font-size: 2.4rem;
@@ -192,7 +192,7 @@ section#nav-bar > .container {
 }
 .info-box-header {
   display: flex;
-  align-items: end;
+  /* align-items: end; */
   margin-bottom: 30px;
 }
 .info-box-header i {
@@ -212,6 +212,7 @@ section#nav-bar > .container {
   justify-content: start;
   gap: 10px;
 }
+/*  */
 .info-box li::before {
   display: inline-block;
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
